@@ -1,8 +1,8 @@
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 1.0
+          <b>Version</b> 2.3.0
         </div>
-        <strong>Copyright &copy; 2020 <a href="https://www.mercapava.com.co">Mercapava S.A</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2015-2020 <a href="#">Jesus Gpe</a>.</strong> All rights reserved.
       </footer>
 
       
