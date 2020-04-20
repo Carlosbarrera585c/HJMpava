@@ -106,7 +106,7 @@
                     </div>
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="ciudad" name="ciudad" required="required">
+                        <input type="text" class="form-control" id="ciudad" name="ciudad" required="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
