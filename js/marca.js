@@ -65,7 +65,7 @@ function listar() {
                 $.each(res.data, function (i, item) {
                     html += '<tr>';
                     html += '<td>' + item.id + '</td>';
-                    html += '<td>' + item.descripcion + '</td>';
+                    html += '<td>' + item.desc_marca + '</td>';
                     html += '<td><button onclick="editar=true" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modal-marcas"\n\
                     data-id="'+item.id+'" \n\
                     data-descripcion="' + item.descripcion + '">Editar</button> ';
