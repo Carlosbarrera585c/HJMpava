@@ -23,7 +23,7 @@ $(document).ready(function () {
                 listar();
             },
             error: function () {
-                console.log("No se ha podido obtener la información");
+                console.log("No se ha podido obtener la información2111");
             }
         });
     });
@@ -68,7 +68,7 @@ function listar() {
                     html += '<td>' + item.desc_marca + '</td>';
                     html += '<td><button onclick="editar=true" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modal-marcas"\n\
                     data-id="'+item.id+'" \n\
-                    data-descripcion="' + item.descripcion + '">Editar</button> ';
+                    data-descripcion="' + item.desc_marca + '">Editar</button> ';
                     html += '<button class="btn btn-sm btn-danger" onclick=eliminar('+item.id+') >Eliminar</button></td>';
                     html += '</tr>';
                 });
@@ -94,7 +94,7 @@ function eliminar(id){
                 listar();
             },
             error: function () {
-                console.log("No se ha podido obtener la información");
+                console.log("No se ha podido obtener la información1");
             }
         });
     }

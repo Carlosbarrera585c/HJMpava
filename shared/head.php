@@ -13,7 +13,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="assets/css/_all-skins.min.css">
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/mercapava.png">
+    <link rel="shortcut icon" href="assets/img/mercapava.png">
 
   </head>

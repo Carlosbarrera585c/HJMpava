@@ -36,20 +36,16 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <!--Contenido-->
-                                            <h3>Listado de Provedores <button class="btn btn-sm btn-primary btn pull-right" data-toggle="modal" data-target="#modal-proveedor">
+                                            <h3>Listado de Marcas <button class="btn btn-sm btn-primary btn pull-right" data-toggle="modal" data-target="#modal-marcas">
                                                     Agregar</button></h3>
                                             <br/>
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <thead>
-                                                    <th>NIT</th>
-                                                    <th>Descripcion Proovedores</th>
-                                                    <th>Direccion</th>
-                                                    <th>Telefono</th>
-                                                    <th>Contacto</th>
-                                                    <th>Barrio</th>
+                                                    <th>Identificador</th>
+                                                    <th>Descripción Marcas</th>
                                                     </thead>
-                                                    <tbody id="datos">
+                                                    <tbody id="datos-marcas">
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -68,40 +64,23 @@
 <!--Fin-Contenido-->
 <!-- FOOTER -->
 <!-- Ventana Modal Insertar Datos -->
-<div class="modal fade" id="modal-proveedor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-marcas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h3 class="modal-title" id="titulo-modal">Nuevo proveedor</h3>
+                <h3 class="modal-title" id="titulo-modal">Nueva marca</h3>
             </div>
             <div class="modal-body">
                 <form id="form-datos">
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">NIT</label>
-                        <input type="text" class="form-control" id="nit" name="nit">
+                        <input type="hidden" class="form-control" id="id" maxlength="15" name="id" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Direccion</label>
-                        <input type="text" class="form-control" id="direccion" name="direccion">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Telefono</label>
-                        <input type="text" class="form-control" id="telefono" name="telefono">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Contacto</label>
-                        <input type="text" class="form-control" id="contacto" name="contacto">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Barrio</label>
-                        <input type="text" class="form-control" id="barrio" name="barrio">
+                        <label for="recipient-name" class="col-form-label">Descripción</label>
+                        <input type="text" class="form-control" id="descripcion" maxlength="40" name="descripcion">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -115,7 +94,7 @@
 </div>
 <!-- Fin Ventana Modal -->
 <?php include_once 'shared/footer.php'; ?>
-<script src="js/proveedor.js"></script>
+<script src="js/marca.js"></script>
 <!-- END FOOTER -->
 </body>
 </html>
