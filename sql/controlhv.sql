@@ -26,7 +26,7 @@ CREATE TABLE `co` (
   `id` varchar(4) NOT NULL,
   `desc_co` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +75,7 @@ CREATE TABLE `equipos` (
   CONSTRAINT `equipos_ibfk_5` FOREIGN KEY (`tipo_equipo`) REFERENCES `tipo_equipo` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `equipos_ibfk_6` FOREIGN KEY (`nit`) REFERENCES `proveedor` (`nit`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `equipos_ibfk_7` FOREIGN KEY (`co`) REFERENCES `co` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +106,7 @@ CREATE TABLE `hv` (
   UNIQUE KEY `id_tipo_intervencion_2` (`id_tipo_intervencion`),
   KEY `id_tipo_intervencion` (`id_tipo_intervencion`),
   KEY `serial` (`serial`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +129,7 @@ CREATE TABLE `marcas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `desc_marca` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -158,7 +158,7 @@ CREATE TABLE `proveedor` (
   `barrio` varchar(30) NOT NULL,
   `ciudad` varchar(45) NOT NULL,
   PRIMARY KEY (`nit`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,7 +182,7 @@ CREATE TABLE `tipo_equipo` (
   `id` int NOT NULL AUTO_INCREMENT,
   `desc_tipo_equipo` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +206,7 @@ CREATE TABLE `tipo_intervencion` (
   `desc_tipo_intervencion` varchar(40) NOT NULL,
   PRIMARY KEY (`id_tipo_intervencion`),
   CONSTRAINT `tipo_intervencion_ibfk_1` FOREIGN KEY (`id_tipo_intervencion`) REFERENCES `hv` (`id_tipo_intervencion`) ON DELETE RESTRICT ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,4 +227,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-22 12:25:15
+-- Dump completed on 2020-04-24  7:59:10

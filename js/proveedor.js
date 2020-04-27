@@ -23,7 +23,7 @@ $(document).ready(function () {
                 listar();
             },
             error: function () {
-                console.log("No se ha podido obtener la información");
+                console.log("No se ha podido obtener la informacion");
             }
         });
     });
@@ -88,7 +88,7 @@ function listar() {
                     data-telefono="' + item.telefono + '" \n\
                     data-contacto="' + item.contacto + '" \n\
                     data-barrio="' + item.barrio + '" \n\
-                    data-ciudad="' + item.ciudad+ '" >Editar</button> ';
+                    data-ciudad="' + item.ciudad + '" >Editar</button> ';
                     html += '<button class="btn btn-sm btn-danger" onclick=eliminar('+item.nit+') >Eliminar</button></td>';
                     html += '</tr>';
                 });
@@ -98,7 +98,7 @@ function listar() {
             }
         },
         error: function () {
-            console.log("No se ha podido obtener la información 2");
+            console.log("No se ha podido obtener la informacion 2");
         }
     });
 }
@@ -114,7 +114,7 @@ function eliminar(nit){
                 listar();
             },
             error: function () {
-                console.log("No se ha podido obtener la información");
+                console.log("No se ha podido obtener la informacion");
             }
         });
     }
